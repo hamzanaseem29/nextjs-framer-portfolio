@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from "../../shared/wrapper/Wrapper"
 import Image from 'next/image'
-import hamza from "../../../asset/hamza.png"
+import user from "../../../asset/user.jpg"
 import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter } from 'react-icons/ti'
 import { FaWhatsapp } from 'react-icons/fa'
 import { motion } from "framer-motion";
@@ -14,33 +14,33 @@ const Hero = () => {
     }
 
     const socialIcon = [
-        { icon: <TiSocialFacebook size={28} />, link: 'https://www.facebook.com/hamza.naseem.186/', },
-        { icon: <TiSocialLinkedin size={28} />, link: 'https://www.linkedin.com/in/hamzanaseem29', },
-        { icon: <TiSocialTwitter size={28} />, link: 'https://twitter.com/devhamza29', },
-        { icon: <FaWhatsapp size={28} />, link: 'https://wa.me/+923132890518', },
+        { icon: <TiSocialFacebook size={28} />, link: 'https://www.facebook.com/', },
+        { icon: <TiSocialLinkedin size={28} />, link: 'https://www.linkedin.com/in/', },
+        { icon: <TiSocialTwitter size={28} />, link: 'https://twitter.com/', },
+        { icon: <FaWhatsapp size={28} />, link: 'https://wa.me/+92 123 45678', },
     ];
     const textVariants = {
         hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: 'easeOut', delay: 3 } },
+        visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: 'easeOut',  } },
     };
 
     const buttonVariants = {
         hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: 'easeOut', delay: 3 } },
+        visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: 'easeOut',  } },
     };
 
     const imageVariants = {
         hidden: { opacity: 0, scale: 0.9 },
-        visible: { opacity: 1, scale: 1, transition: { duration: 1.2, ease: 'easeOut', delay: 3 } },
+        visible: { opacity: 1, scale: 1, transition: { duration: 1.2, ease: 'easeOut',  } },
     };
 
     const socialIconVariants = {
         hidden: { opacity: 0, x: 50 },
-        visible: { opacity: 1, x: 0, transition: { duration: 1.2, ease: 'easeOut', delay: 3 } },
+        visible: { opacity: 1, x: 0, transition: { duration: 1.2, ease: 'easeOut',  } },
     };
     const svgVariants = {
         hidden: { opacity: 0, x: 50 },
-        visible: { opacity: 1, x: 0, transition: { duration: 1.2, ease: 'easeOut', delay: 3 } },
+        visible: { opacity: 1, x: 0, transition: { duration: 1.2, ease: 'easeOut',  } },
     };
     return (
         <div id='home' className='div-container flex md:flex-row flex-col relative group  md:max-w-screen-lg xl:max-w-screen-2xl mx-auto '>
@@ -97,7 +97,7 @@ const Hero = () => {
                             Hi There,
                         </h2>
                         <h1 className='sm:text-5xl text-5xl lg:text-6xl xl:text-7xl font-semibold'>
-                            I am <span className='name' > Hamza</span>
+                            I am <span className='name' > Paul</span>
                         </h1>
                         <h3 className='sm:text-5xl text-5xl lg:text-6xl xl:text-7xl font-semibold'>
                             Frontend Developer
@@ -114,7 +114,7 @@ const Hero = () => {
                                 className='border text-lg lg:text-xl font-semibold hover:bg-primary-white hover:text-primary-gray transition-all ease-in-out duration-300 border-secondary-text/20 rounded-lg lg:rounded-xl py-3 lg:py-3 px-8 md:px-10 text-primary-white'>
                                 See Work
                             </button>
-                            <a href="https://drive.google.com/file/d/1HrblNU6EgGsQEKDChjo8mlBQen3EBH_H/view?usp=sharing" >
+                            <a href="" >
                                 <button className='text-secondary-text text-lg lg:text-xl font-semibold hover:text-primary-white ease-in-out duration-300 transition-all'>
                                     Download CV
                                 </button>
@@ -125,7 +125,7 @@ const Hero = () => {
                         variants={imageVariants}
                         className='w-full lg:w-[40%] mt-5 transition-transform duration-300'
                     >
-                        <Image src={hamza} alt='' height={1080} width={1080} className='lg:w-[500px] w-full object-cover h-[400px] lg:h-[500px]' />
+                        <Image src={user} alt='' height={1080} width={1080} className='lg:w-[500px] w-full object-cover h-[400px] lg:h-[500px]' />
                     </motion.div>
                 </motion.div>
             </Wrapper>

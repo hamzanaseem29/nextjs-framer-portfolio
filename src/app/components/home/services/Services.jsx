@@ -7,10 +7,10 @@ import { BsLayers } from "react-icons/bs";
 
 const Services = () => {
     const services = [
-        { icon: <IoCodeSlash />, title: 'Frontend Development', description: 'Build responsive and interactive web applications using the latest technologies.' },
-        { icon: <PiShapes />, title: 'UI/UX Design', description: 'Provide our customers with optimized user-friendly experiences to increase the efficiency of digital products.' },
-        { icon: <PiPenNib />, title: 'Graphic Design', description: 'Create visually appealing designs that effectively communicate your brand message.' },
-        { icon: <BsLayers />, title: 'Social Media Post Design', description: 'Design engaging social media posts that capture attention and boost engagement.' },
+        { icon: <IoCodeSlash />, title: 'Frontend Development', description: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, tempora provident? Consequatur ipsam exercitationem delectus.' },
+        { icon: <PiShapes />, title: 'UI/UX Design', description: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, tempora provident? Consequatur ipsam exercitationem delectus.' },
+        { icon: <PiPenNib />, title: 'Graphic Design', description: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, tempora provident? Consequatur ipsam exercitationem delectus.' },
+        { icon: <BsLayers />, title: 'Social Media Post Design', description: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, tempora provident? Consequatur ipsam exercitationem delectus.' },
     ];
 
     const ServiceCard = ({ icon, title, description }) => {

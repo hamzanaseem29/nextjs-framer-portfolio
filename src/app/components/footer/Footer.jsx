@@ -7,7 +7,6 @@ import phone from '../../asset/svg/phone-email.svg';
 import { IoCheckmark } from 'react-icons/io5';
 
 const Footer = () => {
-    // Form state
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -86,7 +85,7 @@ const Footer = () => {
         // Validate form before submission
         if (validateForm()) {
             // Replace this with your Formspree endpoint
-            const formspreeEndpoint = 'https://formspree.io/f/mayreazk';
+            const formspreeEndpoint = 'https://formspree.io/YOUR_ENDPOINT';
 
             try {
                 const response = await fetch(formspreeEndpoint, {
@@ -122,9 +121,9 @@ const Footer = () => {
 
     // Modal variants for animation
     const modalVariants = {
-        hidden: { y: '100%', opacity: 0 }, // Start off the screen at the bottom
-        visible: { y: 0, opacity: 1 }, // Slide up and become visible
-        exit: { y: '100%', opacity: 0 }, // Slide back down and disappear
+        hidden: { y: '100%', opacity: 0 }, 
+        visible: { y: 0, opacity: 1 }, 
+        exit: { y: '100%', opacity: 0 }, 
     };
   
 
@@ -153,16 +152,16 @@ const Footer = () => {
                                     <div>
                                         <h3 className="text-2xl xl:text-2xl font-semibold">Phone & Email</h3>
                                         <p className="text-lg text-primary-white/80">
-                                            <a href="tel:(+92)313-2890518" className="hover:text-gray-300 transition">(+92) 313-2890518</a>
+                                            <a href="tel:(+92)1234567" className="hover:text-gray-300 transition">(+92) 123-2456789</a>
                                             <br />
-                                            <a href="mailto:hamzanasim248@gmail.com" className="hover:text-gray-300 transition">hamzanasim248@gmail.com</a>
+                                            <a href="mailto:user123@gmail.com" className="hover:text-gray-300 transition">user123@gmail.com</a>
                                         </p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div className="text-primary-green text-sm xl:text-xl mb-5 xl:mb-0 mt-10 xl:mt-64">
-                            Copyright © 2024 Hamza Naseem. All rights reserved.
+                            Copyright © 2024 User. All rights reserved.
                         </div>
                     </motion.div>
                     <motion.div

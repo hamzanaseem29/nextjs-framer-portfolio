@@ -9,11 +9,9 @@ import Skills from "./components/home/skills/Skills";
 import Services from "./components/home/services/Services";
 import Testimonial from "./components/home/testimonial/Testimonial";
 import Footer from "./components/footer/Footer";
-import Loader from "./Loader";
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
-      <Loader />
       <CustomCursor />
       <Navbar />
       <Hero />

@@ -1,18 +1,17 @@
-import './globals.css'
-import { Syne } from 'next/font/google'
+import "./globals.css";
+import { Syne } from "next/font/google";
 
-const font = Syne({ subsets: ['latin'] })
+const fontSyne = Syne({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Hamza Naseem',
-  description: 'Portfolio',
-}
+  title: "PAUL DEV",
+  description: "Portfolio website",
+};
 
 export default function RootLayout({ children }) {
-  
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={fontSyne.className}>{children}</body>
     </html>
-  )
+  );
 }

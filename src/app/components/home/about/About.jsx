@@ -2,7 +2,7 @@ import React from 'react'
 import Wrapper from '../../shared/wrapper/Wrapper'
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
-import hamza from "../../../asset/about1.jpg";
+import user from "../../../asset/user.jpg";
 import Heading from "../../shared/heading/Heading"
 const About = () => {
 
@@ -47,7 +47,7 @@ const About = () => {
                             whileHover="hover"
                             variants={imageVariants}
                         >
-                            <Image src={hamza} alt='About Image' width={1080} height={1080}
+                            <Image src={user} alt='About Image' width={1080} height={1080}
                                 className='w-[600px] h-[400px] object-cover object-right transition-transform duration-500' />
                         </motion.div>
                         <motion.div
@@ -57,7 +57,7 @@ const About = () => {
                             variants={statsVariants}
                         >
                             <p className='text-xl text-secondary-text font-medium'>
-                             I&apos;ve grown from simply enjoying problem-solving to dedicating myself to blending design with function, crafting interfaces that are both beautiful and intuitive. Each project is a chance to exceed expectations, bring visions to life with precision and care. I believe, every remarkable product tells a story of both expertise and the unique brand identity.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem animi quibusdam. Illo ullam impedit dicta repellendus voluptatum quo. Similique, fugit aperiam! Voluptates, in nesciunt blanditiis obcaecati enim atque optio.
                             </p>
                             <div className='flex flex-wrap gap-10 w-full my-4'>
                                 <motion.div variants={statItemVariants} className='flex flex-col'>
@@ -77,11 +77,11 @@ const About = () => {
                             <div className='flex items-center gap-10 mt-4 flex-wrap w-full'>
                                 <motion.div variants={statItemVariants} className='flex flex-wrap items-center gap-1 text-secondary-text font-medium text-lg'>
                                     <p>Email:</p>
-                                    <a href="mailto:hamzanasim248@gmail.com" className='hover:text-primary-green ease-linear duration-200 transition-all'>hamzanasim248@gmail.com</a>
+                                    <a href="mailto:user@gmail.com" className='hover:text-primary-green ease-linear duration-200 transition-all'>user@gmail.com</a>
                                 </motion.div>
                                 <motion.div variants={statItemVariants} className='flex flex-wrap items-center gap-1 text-secondary-text font-medium text-lg'>
                                     <p>Phone:</p>
-                                    <a href="tel:(+92)313-2890518" className='hover:text-primary-green ease-linear duration-200 transition-all'>+92 313 2890518</a>
+                                    <a href="tel:(+92)123 234567" className='hover:text-primary-green ease-linear duration-200 transition-all'>+92 123 456789</a>
                                 </motion.div>
                                 <motion.div variants={statItemVariants} className='flex flex-wrap items-center gap-1 text-secondary-text font-medium text-lg'>
                                     <p>Location:</p>

@@ -2,15 +2,9 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
-import { IoStatsChartOutline } from "react-icons/io5";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 import Image from "next/image";
-import hammed from "../../../asset/client/hammed.jpg";
-import Bee from "../../../asset/client/bee_binite.jpeg";
-import jordan from "../../../asset/client/jordan.jpg";
 import user from "../../../asset/user.png";
-import { FaStar } from "react-icons/fa";
 import { TiStarFullOutline } from "react-icons/ti";
 import { PiQuotes } from "react-icons/pi";
 
@@ -46,44 +40,30 @@ function SamplePrevArrow(props) {
 
 const Cards = () => {
     const data = [
+
         {
             id: 1,
-            title: 'Hammed Odulana',
-            image: hammed,
-            country: 'Nigeria',
-            description: 'Hamza delivered a beautiful and responsive website for our business. He was quick, professional, and really understood our vision. Highly recommend!'
+            title: 'John Smith',
+            country: 'USA',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maiores quibusdam ab vero! Veritatis, nulla asperiores po'
         },
         {
             id: 2,
-            title: 'Bee Binite',
-            image: Bee,
-            country: 'United Kingdom',
-            description: 'Hamza built a custom admin dashboard for us, and it’s exactly what we needed. Clean design, smooth performance, and completed on time.'
+            title: 'John Smith',
+            country: 'USA',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maiores quibusdam ab vero! Veritatis, nulla asperiores po'
         },
         {
             id: 3,
-            title: 'Jordan',
-            image: jordan,
-            country: 'Ghana',
-            description: 'He revamped our website with Next.js, making it faster and more user-friendly. Great communication and quality work.'
+            title: 'John Smith',
+            country: 'USA',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maiores quibusdam ab vero! Veritatis, nulla asperiores po'
         },
         {
             id: 4,
-            title: 'Rafael Franco',
-            country: 'Spain',
-            description: 'Hamza built a fantastic, responsive site for us—fast, reliable, and exactly what we needed!'
-        },
-        {
-            id: 5,
-            title: 'Felipe Bizger',
-            country: 'Indonesia',
-            description: 'Quick, professional, and delivered a great admin dashboard. Highly recommend!'
-        },
-        {
-            id: 6,
-            title: 'Russel Ruiz',
+            title: 'John Smith',
             country: 'USA',
-            description: 'Hamza did an amazing job on our website redesign. Very pleased with the results!'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maiores quibusdam ab vero! Veritatis, nulla asperiores po'
         },
     ];
 
@@ -99,7 +79,7 @@ const Cards = () => {
         arrows: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
-        
+
         responsive: [
             {
                 breakpoint: 1100,
@@ -110,7 +90,7 @@ const Cards = () => {
                     autoplaySpeed: 2000,
                     infinite: true,
                     dots: false,
-                    
+
                 },
             },
             {
@@ -118,7 +98,7 @@ const Cards = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    
+
                 },
             },
             {
@@ -126,7 +106,7 @@ const Cards = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    
+
                 },
             },
             {
@@ -134,7 +114,7 @@ const Cards = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    
+
                 },
             },
         ],
@@ -162,21 +142,18 @@ const Cards = () => {
                         </div>
                         <p className="pt-6 text-primary-white text-left text-xl font-light ">{e.description}</p>
 
-                        {/* Shimmering 5-star rating */}
                         <div className="absolute bottom-6 w-full">
                             <div className="flex justify-between items-center w-full">
                                 <div className="flex items-center">
+                                    {Array.from({ length: 5 }, (_, index) => (
+                                        <span key={index} className="text-primary-green text-xl shimmer-star">
+                                            <TiStarFullOutline />
 
-                                {Array.from({ length: 5 }, (_, index) => (
-                                    <span key={index} className="text-primary-green text-xl shimmer-star">
-                                        <TiStarFullOutline />
-
-                                    </span>
-                                ))}
+                                        </span>
+                                    ))}
                                 </div>
                                 <PiQuotes size={24} />
                             </div>
-
                         </div>
                     </div>
                 ))}

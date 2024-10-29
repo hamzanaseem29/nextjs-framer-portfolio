@@ -15,10 +15,8 @@ const Testimonial = () => {
                     tag="h2"
                     text="Reviews from My Satisfied Clients"
                     styleType="h2"
-
                 />
-
-            <Cards/>
+                <Cards />
             </div>
         </Wrapper>
     )

@@ -4,38 +4,23 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
 import Wrapper from "../../shared/wrapper/Wrapper";
-// import img1 from "../../../asset/portfolio_1.jpeg";
-// import img2 from "../../../asset/portfolio_2.jpeg";
-// import img3 from "../../../asset/portfolio_3.jpeg";
-// import img4 from "../../../asset/portfolio_4.jpeg";
-import img1 from "../../../asset/projects/1.jpg";
-import img2 from "../../../asset/projects/2.jpg";
-import img3 from "../../../asset/projects/3.jpg";
-import img4 from "../../../asset/projects/4.jpg";
-import img5 from "../../../asset/projects/5.jpg";
-import img6 from "../../../asset/projects/6.jpg";
-import img7 from "../../../asset/projects/7.png";
-import img8 from "../../../asset/projects/8.jpg";
+import img1 from "../../../asset/portfolio_1.jpeg";
+import img2 from "../../../asset/portfolio_2.jpeg";
+import img3 from "../../../asset/portfolio_3.jpeg";
+import img4 from "../../../asset/portfolio_4.jpeg";
+
 import { useRouter } from "next/navigation";
 const Projects = () => {
     const [showMore, setShowMore] = React.useState(false);
     const router = useRouter();
     const portfolioCards = [
-        // { id: 1, image: img1, link: "", portfolioName: "Design portfolio" },
-        // { id: 2, image: img2, link: "", portfolioName: "Design portfolio" },
-        // { id: 3, image: img3, link: "", portfolioName: "Design portfolio" },
-        // { id: 4, image: img4, link: "", portfolioName: "Design portfolio" },
-        // { id: 5, image: img3, link: "", portfolioName: "Design portfolio" },
-        // { id: 6, image: img4, link: "", portfolioName: "Design portfolio" },
+        { id: 1, image: img1, link: "",  },
+        { id: 2, image: img2, link: "",  },
+        { id: 3, image: img3, link: "",  },
+        { id: 4, image: img4, link: "",  },
+        { id: 5, image: img3, link: "",  },
+        { id: 6, image: img4, link: "",  },
         // You can add more cards if necessary
-        { id: 1, image: img6, githubLink: "https://github.com/hamzanaseem29", liveLink: "https://captifylive.online/" },
-        { id: 2, image: img2, githubLink: "https://github.com/hamzanaseem29", liveLink: "https://sita00.vercel.app/" },
-        { id: 3, image: img3, githubLink: "https://github.com/hamzanaseem29", liveLink: "https://restaurant-rust-eight.vercel.app/" },
-        { id: 4, image: img4, githubLink: "https://github.com/hamzanaseem29", liveLink: "https://browndot-fe.vercel.app/" },
-        { id: 5, image: img5, githubLink: "https://github.com/hamzanaseem29", liveLink: "https://mad-two.vercel.app/" },
-        { id: 6, image: img1, githubLink: "https://github.com/hamzanaseem29", liveLink: "https://sparkling-cajeta-09237a.netlify.app/" },
-        { id: 7, image: img7, githubLink: "https://github.com/hamzanaseem29", liveLink: "https://socialreachpro.vercel.app/" },
-        { id: 8, image: img8, githubLink: "https://github.com/hamzanaseem29", liveLink: "https://cicada-azure.vercel.app/" },
     ];
 
     // Control how many cards are initially shown
@@ -50,16 +35,6 @@ const Projects = () => {
     const h2Ref = React.useRef(null);
     const isH1InView = useInView(h1Ref, { once: true });
     const isH2InView = useInView(h2Ref, { once: true });
-
-    const buttonVariants = {
-        hidden: { opacity: 0, y: 20, scale: 1.1 },
-        visible: {
-            opacity: 1,
-            y: 1,
-            scale: 1,
-            transition: { duration: 0.05, ease: "easeOut" },
-        },
-    };
 
     return (
         <Wrapper>
